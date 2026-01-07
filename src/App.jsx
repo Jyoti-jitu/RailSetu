@@ -13,7 +13,9 @@ function App() {
       <Navbar />
       <div className="relative">
         <Hero />
-        
+        <div className="relative z-30 pb-12">
+          <BookingCard />
+        </div>
       </div>
       <Services />
       <PackagesCarousel />
