@@ -57,7 +57,7 @@ const BookingCard = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 items-center">
                         {/* From */}
-                        <div className="lg:col-span-3 relative">
+                        <div className="lg:col-span-5">
                             <div className="border border-gray-300 rounded p-3 flex items-center hover:border-irctc-blue focus-within:border-irctc-blue focus-within:ring-1 focus-within:ring-irctc-blue transition-colors">
                                 <FaTrain className="text-gray-400 mr-3" />
                                 <div className="w-full">
@@ -68,14 +68,14 @@ const BookingCard = () => {
                         </div>
 
                         {/* Swap Icon */}
-                        <div className="lg:col-span-1 flex justify-center">
+                        <div className="lg:col-span-2 flex justify-center">
                             <button className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-irctc-blue transition-colors">
                                 <FaExchangeAlt />
                             </button>
                         </div>
 
                         {/* To */}
-                        <div className="lg:col-span-3 relative">
+                        <div className="lg:col-span-5">
                             <div className="border border-gray-300 rounded p-3 flex items-center hover:border-irctc-blue focus-within:border-irctc-blue focus-within:ring-1 focus-within:ring-irctc-blue transition-colors">
                                 <FaTrain className="text-gray-400 mr-3" />
                                 <div className="w-full">
@@ -86,7 +86,7 @@ const BookingCard = () => {
                         </div>
 
                         {/* Date */}
-                        <div className="lg:col-span-2 relative">
+                        <div className="lg:col-span-4">
                             <div className="border border-gray-300 rounded p-3 flex items-center hover:border-irctc-blue focus-within:border-irctc-blue focus-within:ring-1 focus-within:ring-irctc-blue transition-colors">
                                 <FaCalendarAlt className="text-gray-400 mr-3" />
                                 <div className="w-full">
@@ -96,7 +96,7 @@ const BookingCard = () => {
                             </div>
                         </div>
                         {/* Class */}
-                        <div className="lg:col-span-3 relative">
+                        <div className="lg:col-span-4">
                             <div className="border border-gray-300 rounded p-3 flex items-center hover:border-irctc-blue focus-within:border-irctc-blue focus-within:ring-1 focus-within:ring-irctc-blue transition-colors">
                                 <FaBriefcase className="text-gray-400 mr-3" />
                                 <div className="w-full">
@@ -111,7 +111,28 @@ const BookingCard = () => {
                                 </div>
                             </div>
                         </div>
+
+                        {/* Quota */}
+                        <div className="lg:col-span-4">
+                            <div className="border border-gray-300 rounded p-3 flex items-center hover:border-irctc-blue focus-within:border-irctc-blue focus-within:ring-1 focus-within:ring-irctc-blue transition-colors">
+                                <FaUser className="text-gray-400 mr-3" />
+                                <div className="w-full">
+                                    <label className="block text-xs text-gray-500 mb-0.5">Quota</label>
+                                    <select className="w-full outline-none text-irctc-dark font-medium bg-transparent">
+                                        <option>GENERAL</option>
+                                        <option>LADIES</option>
+                                        <option>LOWER BERTH / SR. CITIZEN</option>
+                                        <option>PERSON WITH DISABILITY</option>
+                                        <option>DUTY PASS</option>
+                                        <option>TATKAL</option>
+                                        <option>PREMIUM TATKAL</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+
 
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
                         <div className="flex items-center space-x-6">

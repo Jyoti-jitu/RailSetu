@@ -32,10 +32,10 @@ const Navbar = () => {
           : "bg-white shadow-md"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+      <div className="w-full px-6">
+        <div className="flex items-center h-20">
 
-          {/* Logo */}
+          {/* ------------ Logo Left ------------- */}
           <div className="flex items-center">
             <img
               src={logo}
@@ -44,9 +44,11 @@ const Navbar = () => {
             />
           </div>
 
-          {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center space-x-10">
-            <div className="flex space-x-8">
+          {/* ------------ Desktop Navbar ------------- */}
+          <div className="hidden lg:flex items-center w-full">
+
+            {/* Center Menu */}
+            <div className="flex-1 flex justify-center space-x-10">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
@@ -58,6 +60,7 @@ const Navbar = () => {
               ))}
             </div>
 
+            {/* Right Buttons */}
             <div className="flex items-center space-x-4">
               <button className="text-gray-700 border border-gray-300 px-3 py-1 rounded hover:bg-gray-50 text-sm">
                 हिंदी
@@ -71,10 +74,11 @@ const Navbar = () => {
                 Log In
               </button>
             </div>
+
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="lg:hidden">
+          {/* ------------ Mobile Menu Button ------------- */}
+          <div className="lg:hidden ml-auto">
             <button
               onClick={() => setNavOpen(!navOpen)}
               className="text-gray-700 p-2"
@@ -85,7 +89,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* ------------ Mobile Menu ------------- */}
       {navOpen && (
         <div className="lg:hidden bg-white border-t">
           <div className="px-4 py-3 space-y-2">
@@ -118,3 +122,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+    
