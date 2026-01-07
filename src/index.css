@@ -4,30 +4,35 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #F5F4F2;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer base {
+  body {
+    @apply font-poppins bg-[#F5F4F2] dark:bg-gray-900 dark:text-gray-100;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 }
 
 /* Slick Carousel Customization */
-.slick-prev:before, .slick-next:before {
-    color: #000075 !important;
+.slick-prev:before,
+.slick-next:before {
+  color: #000075 !important;
 }
 
 /* Scrollbar Customization */
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
+
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
